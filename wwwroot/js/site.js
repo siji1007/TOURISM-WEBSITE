@@ -1,4 +1,8 @@
-﻿// Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
+﻿function handleCardClick(district) {
 
-// Write your JavaScript code.
+    // Get the content container element
+    var contentContainer = document.querySelector('.main-content');
+
+    // Change the background color of the content container
+    contentContainer.style.backgroundColor = 'black';
+}

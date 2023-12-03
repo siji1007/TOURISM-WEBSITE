@@ -18,16 +18,24 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
 
 .navbar-nav {
-    margin:auto;
+    position: fixed;
+    margin: auto;
+    right:0;
 }
 
 .nav-link {
-    margin: auto;
+    margin-left: auto;
     font-size: 20px;
     margin-right: 50px;
+   
 }
 
+h5{
+    text-align:center;
+}
