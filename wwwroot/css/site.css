@@ -112,10 +112,6 @@ header .search-bar-container label:hover{
     display:none;
 }
 
-
-
-
-
 @media(max-width:1200px){
     html {
         font-size: 55%;
@@ -156,12 +152,6 @@ header .search-bar-container label:hover{
         }
 }
 
-.container {
-    margin-top: 10rem;
-    display: flex;
-
-}
-
 .logo img {
     width: auto;
     height: 60px; 
@@ -173,6 +163,19 @@ header .search-bar-container label:hover{
     align-items: center;
     text-decoration: none;
     color: black; /* Adjust the color as needed */
+}
+
+
+main {
+    margin-top: 10rem;
+    display: flex;
+    bottom: 0;
+    background-color: aqua;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
 }
 
 

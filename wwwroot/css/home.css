@@ -1,50 +1,65 @@
-﻿body {
+﻿
+.home-content .slogan {
+    position: relative;
+    overflow: hidden;
+}
+
+.slogan {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    transform: translate(0, -50%);
+    text-align: left;
+    color: white; /* Adjust text color as needed */
+    font-size: 2.5rem;
+    background-color: transparent;
+    font-weight: bold;
+}
+
+
+
+
+.home-content {
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
     margin: 0;
-    padding: 0;
 }
 
-.col {
-    height: 290px;
-    position: fixed;
-    bottom: 20px;
-    right: 15px;
-}
-
-
-.card {
-    width: 200px;
-    height: 100%;
-    display: inline-block;
-    border-radius: 10px;
-    padding: 15px 25px;
-    box-sizing: border-box;
-    cursor: pointer;
-    margin: 10px 0px;
-    background-image: url(/lib/Images/Bayabas_Labo.jpg);
-    background-position: center;
-    background-size: cover;
-    right: 0;
-    transition: opacity 0.3s ease, transform 0.3s ease, margin 0.3s ease;
-}
-
-
-.card:hover {
-    opacity: 1; 
-    transform: scale(1.1); 
-    margin:10px;
-}
-
-
-
-.main-content {
+.background-video {
+    position: absolute;
+    top: 0;
     left: 0;
-    height: 100vh; /* 100% of the viewport height */
+    right:0;
+    bottom:0;
     width: 100%;
-    background-size: cover; /* Ensures the image covers the entire background */
-    background-position: center;
-    border: 2px solid aqua;
+    height: 100%;
+    object-fit:cover;
 }
 
+@media(max-width:768px){
+    .background-video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+    }
 
-
+    .slogan {
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        transform: translate(0, -50%);
+        text-align: left;
+        color: white; /* Adjust text color as needed */
+        font-size: 1.5rem;
+        background-color: transparent;
+        font-weight: bold;
+    }
+}
 
