@@ -7,37 +7,39 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/TOURISM_WEBSITE.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 </head>
 <body>
+
+    
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-gray border-bottom box-shadow mb-3">
-            <div class="container">
-                <a class="navbar-brand" asp-area="" asp-page="/Index">CAMARINES NORTE</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav ">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Tours">Tours</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Explore">Explore</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/About">About Us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Contact">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+       <div id="menu-bar" class="fas fa-bars"></div>
+        <a asp-area="" asp-page="/Index" class="logo">
+            <img src="/lib/Images/LOGO.png" alt="Camarines Norte Logo">
+        </a>
+
+
+        <nav class="navbar">
+            <a asp-area="" asp-page="/Index">Home</a>
+            <a asp-area="" asp-page="/Tours">Tours</a>
+            <a asp-area="" asp-page="/Explore">Explore</a>
+            <a asp-area="" asp-page="/About">About</a>
+            <a asp-area="" asp-page="/Contact">Contact</a>
         </nav>
+
+
+        <div class="icons">
+            <i class="fas fa-search" id="search-btn"></i>
+            <i class="fas fa-user" id="login-btn"></i>
+
+        </div>
+
+        <form action="" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="search here..."/>
+            <label for="search-bar" class="fas fa-search"></label>
+
+        </form>
+
     </header>
     <div class="container">
         <main role="main" class="pb-3">

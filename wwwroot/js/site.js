@@ -1,8 +1,21 @@
-﻿function handleCardClick(district) {
+﻿let searchBtn = document.querySelector('#search-btn');
+let searchBar = document.querySelector('.search-bar-container');
+let menu = document.querySelector('#menu-bar');
+let navbar = document.querySelector('.navbar');
 
-    // Get the content container element
-    var contentContainer = document.querySelector('.main-content');
 
-    // Change the background color of the content container
-    contentContainer.style.backgroundColor = 'black';
-}
+
+menu.addEventListener('click', () => {
+    menu.classList.toggle('fa-times');
+    navbar.classList.toggle('active');
+
+
+});
+
+
+searchBtn.addEventListener('click', () => {
+    searchBtn.classList.toggle('fa-times');
+    searchBar.classList.toggle('active');
+
+
+});
