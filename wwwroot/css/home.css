@@ -4,6 +4,16 @@
     overflow: hidden;
 }
 
+div .home-content {
+    background-color: #fed9ff;
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    text-align: center;
+    padding: 20px;
+}
+
+
 .slogan {
     position: absolute;
     top: 30%;
