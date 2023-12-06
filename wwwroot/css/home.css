@@ -6,14 +6,27 @@
 
 .slogan {
     position: absolute;
-    top: 10%;
-    left: 10%;
+    top: 30%;
     transform: translate(0, -50%);
-    text-align: left;
+    text-align: center;
     color: white; /* Adjust text color as needed */
-    font-size: 2.5rem;
+    font-size: 12rem;
     background-color: transparent;
     font-weight: bold;
+    font-family: 'Langar';
+}
+
+.tagline {
+    position: absolute;
+    top: 45%;
+    left: 33%;
+    transform: translate(0, -50%);
+    text-align: center;
+    color: white; /* Adjust text color as needed */
+    font-size: 3rem;
+    background-color: transparent;
+    font-weight: bold;
+    font-family: 'Langar';
 }
 
 
@@ -27,7 +40,7 @@
     margin: 0;
 }
 
-.background-video {
+.background-image {
     position: absolute;
     top: 0;
     left: 0;
@@ -39,7 +52,7 @@
 }
 
 @media(max-width:768px){
-    .background-video {
+    .background-image {
         position: absolute;
         top: 0;
         left: 0;
@@ -61,5 +74,7 @@
         background-color: transparent;
         font-weight: bold;
     }
+
+    
 }
 
