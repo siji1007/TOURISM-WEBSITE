@@ -1,8 +1,135 @@
-﻿@page
+\@page
 @model ExploreModel
 @{
     ViewData["Title"] = "Explore";
 }
 
+<link rel="stylesheet" href="~/css/Explore.css" asp-append-version="true" />
+<link href='https://fonts.googleapis.com/css?family=Langar' rel='stylesheet'>
 
-<H5>THIS IS THE EXPLORE PAGE</H5>
+<body>
+     <div class="explore-content">
+        <img src="/lib/Images/bgs.jpg" alt="Background Image" class="background-image">
+
+        <h5 class="slogan">
+            EXPLORE THE CAMARINES NORTE
+        </h5>
+
+        <section class="slider-container">
+        <div class="slider-wrapper">
+            <div class="slider">
+                <section>
+                    <div class="container reveal">
+                      <div class="scroll">
+                        <h2>Historical Place</h2>
+                        <p>Exploring Camarines Norte offers  a  historical journey  through  churches, museums,  landmarks,  and monuments,  showcasing  the  rich cultural  heritage  of  Camarines Norte.</p>
+                        <div class="cards">
+                        <div class="text-card">
+                            <h3>RIZAL MONUMENT</h3>
+                            <img src="/lib/Images/exp1.jpg" alt="exp1" class="center">
+                            <p>At Rizal Park in Daet, Camarines Norte of the Bicol Region stands the first Rizal Monument built in February 1899. The monument is three-sided where two of its sides feature two of his famous novels, the Noli Me Tangere and El Filibusterismo.</p>
+                        </div>
+                        <div class="text-card">
+                            <h3>NUESTRA SEŃORA DE CANDELARIA CHURCH</h3>
+                            <img src="/lib/Images/exp2.jpg" alt="exp2" class="center">
+                            <p>The old stone church sits at the center of the town of Paracale, a third-class municipality of the province of Camarines Norte. The church has been a witness to the rich cultural heritage of the province, which structure has withstood a long period of time amidst the natural and man-made calamities.</p>
+                        </div>
+                        <div class="text-card">
+                            <h3>BAGASBAS BEACH</h3>
+                            <img src="/lib/Images/exp3.jpg" alt="exp3" class="center">
+                            <p>Bagasbas Beach in Daet, Camarines Norte is one of the top surfing spots in the Philippines. This brown-sand beach break is a safe place for both novice and experienced surfersalike. A boulevard lined with guesthouses, restaurants and KTV bars (actually, the next best thing to do here besides surfing is karaoke!) runs along the length of Bagasbas Beach. </p>
+                        </div>
+                        </div>
+                        <a href="https://www.studocu.com/ph/document/urdaneta-city-university/hospitality-management/camarines-norte-powerpoint/35287699">
+                            <button type="button">More Info</button>
+                        </a>
+                      </div>
+                    </div>
+                </section>
+
+                <section>
+                  <div class="scroll">
+                    <div class="container reveal">
+                        <h2>Festival</h2>
+                        <p>The festival brings together diverse municipalities to showcase their culture, history, arts, traditions, and tourism potentials.</p>
+                        <div class="cards">
+                        <div class="text-card">
+                            <h3>Bantayog Festival</h3>
+                            <img src="/lib/Images/bantayogy.jpg" alt="bantayogy" class="center">
+                            <p>a historical festival and founding anniversary celebration held in the province of Camarines Norte, Philippines every April. It is a festival that gives tribute to the heroism of Jose Rizal and local patriots who took part in the Daet revolt in 1898.</p>
+                        </div>
+                        <div class="text-card">
+                            <h3>Rahugan Festival</h3>
+                            <img src="/lib/Images/rahugan1.jpg" alt="rahugan" class="center">
+                            <p>The first Rahugan Festival was launched in 2008. The name of the fest comes from rahug, which means a group of coconuts and also refers to strength in unity. The celebration highlights the core values of the townsfolk, including close-knit ties, community spirit, and love for peaceful living.</p>
+                        </div>
+                        <div class="text-card">
+                            <h3>Pabirik Festival</h3>
+                            <img src="/lib/Images/pabirik.jpg" alt="pabirik" class="center">>
+                            <p>Pabirik Festival is a festival that recognizes the gold mining in the territory of Camarines Norte. This festival obliges the 400th year Foundation Anniversary of the town's Patron Saint which is the Our Lady of Candelaria. </p>
+                        </div>
+                        </div>
+                        <a href="https://byaheroph.blogspot.com/2017/09/festivals-in-camarines-norte.html">
+                            <button type="button">More Info</button>
+                        </a>
+                     </div>
+                   </div>
+                </section>
+
+                <section>
+                    <div class="container reveal">
+                      <div class="scroll">
+                        <h2>Culinary Delights</h2>
+                        <p>Bicol cuisine, particularly in Camarines Norte, has gained recognition, positioning itself as a potential trend in Food Tourism.</p>
+                        <div class="cards">
+                        <div class="text-card">
+                            <h3>Pilinut Candy</h3>
+                            <img src="/lib/Images/pili.jpg" alt="pili" class="center">
+                            <p>Pilinit candy is this crunchy candy that satisfies taste buds perfectly. It can be made in 3 various flavors: sugar-coated or sweet glazed and sprinkled with salt and hot and spicy. Any of those is worth the try.</p>
+                        </div>
+                        <div class="text-card">
+                            <h3>Pilitart</h3>
+                            <img src="/lib/Images/tart.jpg" alt="tart" class="center">
+                            <p>Pilitart is a crisp and creamy combo just for you! This famous delicacy comes in flower-like and boat-shaped thin crust filled with sweet filling and pili garnish.</p>
+                        </div>
+                        <div class="text-card">
+                            <h3>Laing</h3>
+                            <img src="/lib/Images/laing1.jpg" alt="laing1" class="center">
+                            <p>Widely known not just in Camarines Norte but all over the region. Shredded “Natong” or taro leaf is the primary ingredient cooked in thick coconut milk with meat or seafood. This is one of the famous Bicolano dishes which never goes wrong in all seasons.</p>
+                        </div>
+                        </div>
+                        <a href="https://laquatsa.com/delicacies-in-camarines-norte/">
+                            <button type="button">More Info</button>
+                        </a>
+                       </div>
+                    </div>
+                </section>
+            </div>
+         </div>
+         </section>
+     </div>
+
+        <script type=""text-javascript">
+            window.addEventListener('scroll', reveal);
+
+            function reveal() {
+                var reveals = document.querySelectorAll(".reveal");
+
+                for (var i=0; i< reveals.length; i++){
+
+                    var windowheight = window.innerHeight: 
+                    var revealtop = reveals[i].getBoundingClientRect().top;
+                    var revealpoint = 150%;
+
+                    if (revealtop < windowheight - revealpoint){
+                        reveals[i].classList.add('active');
+                    }
+                    else{
+                        reveals[i],classList.remove('active');
+                    }
+                }
+            }
+        </script>
+
+    </body>
+</html>
