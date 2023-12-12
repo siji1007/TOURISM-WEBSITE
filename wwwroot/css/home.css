@@ -4,22 +4,80 @@
     overflow: hidden;
 }
 
+div .home-content {
+    background-color: #12376A;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    padding: 20px;
+}
+
+
 .slogan {
     position: absolute;
-    top: 10%;
-    left: 10%;
+    top: 45%;
     transform: translate(0, -50%);
-    text-align: left;
+    text-align: center;
     color: white; /* Adjust text color as needed */
-    font-size: 2.5rem;
+    font-size: 12rem;
     background-color: transparent;
     font-weight: bold;
+    font-family: 'Langar';
+}
+
+
+
+.slogan2 {
+    position: absolute;
+    left: 26%;
+    top: 145%;
+    transform: translate(0, -50%);
+    color: white; 
+    font-size: 6rem;
+    background-color: transparent;
+    font-weight: bold;
+    font-family: 'Langar';
+}
+
+.image1 {
+    position: absolute;
+    left: 10%;
+    top: 200%;
+    width: 2%;
+    height: auto;
+    transform: translate(0, -50%);
+    color: white;
+}
+
+.image2 {
+    position: absolute;
+    left: 60%;
+    top: 280%;
+    width: 2%;
+    height: auto;
+    transform: translate(0, -50%);
+    color: white;
+}
+
+.tagline {
+    position: absolute;
+    top: 45%;
+    left: 33%;
+    transform: translate(0, -50%);
+    text-align: center;
+    color: white; /* Adjust text color as needed */
+    font-size: 3rem;
+    background-color: transparent;
+    font-weight: bold;
+    font-family: 'Langar';
 }
 
 
 
 
 .home-content {
+    background-color: #12376A;
     position: relative;
     overflow: hidden;
     width: 100vw;
@@ -27,7 +85,7 @@
     margin: 0;
 }
 
-.background-video {
+.background-image {
     position: absolute;
     top: 0;
     left: 0;
@@ -38,8 +96,20 @@
     object-fit:fill;
 }
 
+.background-image2 {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 400%;
+    object-fit: cover;
+    opacity:0.2;
+}
+
 @media(max-width:768px){
-    .background-video {
+    .background-image {
         position: absolute;
         top: 0;
         left: 0;
@@ -61,5 +131,7 @@
         background-color: transparent;
         font-weight: bold;
     }
+
+    
 }
 
