@@ -1,7 +1,38 @@
 ﻿@page
 @model TOURISM_WEBSITE.Pages.ContactModel
 @{
-    ViewData["Title"]="Contact";
+    ViewData["Title"] = "Contact";
 }
 
-<h5>THIS IS THE CONTACTS PAGE</h5>
+<link rel="stylesheet" href="~/css/Contact.css" asp-append-version="true" />
+
+
+
+<!-- Update your form with asp-for attributes to bind to the model properties -->
+
+
+
+<div class="particles-js">
+    <form class="form" method="post" asp-page-handler="OnPost" id="contactForm" onsubmit="executePythonScript()">
+
+        <h2>CONTACT US!</h2>
+
+        <p type="Name:"><input id="namE" asp-for="clientInfo.fullname" placeholder="Write your name here.." required /></p>
+        <p type="Email:"><input id="emaiL" asp-for="clientInfo.email" placeholder="Let us know how to contact you back.." required /></p>
+        <p type="Message:"><input id="messagE" asp-for="clientInfo.message" placeholder="What would you like to tell us.." required /></p>
+        <button type="submit">Send Message</button>
+        <div>
+            <span class="fa fa-phone"></span>09350053917
+            <span class="fa fa-envelope-o"></span> christianjohnibanez@gmail.com
+        </div>
+    </form>
+</div>
+
+
+
+
+
+
+
+
+    

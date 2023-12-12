@@ -18,7 +18,7 @@
 
  html{
      font-size: 62.5%;
-     overflow:hidden;
+  
      scroll-padding-top: 6rem;
      scroll-behavior:smooth;
 
@@ -27,7 +27,7 @@
 
 
 header {
-    position:fixed;  
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -36,7 +36,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2rem 9%;
+    padding: 1rem 9%;
 }
 
 
@@ -119,8 +119,8 @@ header .search-bar-container label:hover{
 }
 
 @media(max-width:991px){
-    header{
-        padding:2rem
+    header {
+        padding: 1rem 9%;
     }
 }
 

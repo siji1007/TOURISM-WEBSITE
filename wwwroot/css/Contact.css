@@ -1,0 +1,131 @@
+﻿
+
+
+.form {
+    width: 340px;
+    height: 80%;
+    background-image: url("/lib/Images/FORM.png");
+    background-size: cover; /* Add this line to make the background image cover the container */
+    border-radius: 8px;
+    box-shadow: 0 0 40px -10px #000;
+    margin: calc(40vh - 220px) auto;
+    padding: 20px 30px;
+    max-width: calc(100vw - 40px);
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    transition: all 0.3s ease;
+    animation: slideDownToUpFadeIn 1s ease;
+   
+}
+
+
+@keyframes slideDownToUpFadeIn {
+    from {
+        transform: translateY(100%); /* Slide in from the bottom */
+        opacity: 0; /* Start with 0 opacity (invisible) */
+    }
+
+    to {
+        transform: translateY(0); /* Slide up */
+        opacity: 1; /* Fade in with 100% opacity (fully visible) */
+    }
+}
+
+
+input {
+    width: 90%;
+    padding: 10px;
+    box-sizing: border-box;
+    background: none;
+    outline: none;
+    resize: none;
+    border: 0;
+    font-family: 'Montserrat',sans-serif;
+    transition: all .3s;
+    border-bottom: 2px solid rgba(255, 165, 0, 0.5);
+    font-size: 13px;
+}
+
+    input:focus {
+        border-bottom: 2px solid #78788c
+    }
+
+p:before {
+    content: attr(type);
+    display: block;
+    margin: 28px 0 0;
+    font-size: 16px;
+    color: #5a5a5a
+}
+
+button {
+    float: right;
+    padding: 8px 12px;
+    margin: 8px 0 0;
+    font-family: 'Montserrat',sans-serif;
+    border: 2px solid #78788c;
+    background: orange;
+    color: white;
+    cursor: pointer;
+    transition: all .3s
+}
+
+    button:hover {
+        background-color:gray ;
+        color: #fff
+    }
+
+h2 {
+    margin: 10px 0;
+    padding-bottom: 10px;
+    width: 180px;
+    color: #333;
+    border-bottom: 3px solid #78788c;
+    font-weight:bold;
+}
+
+
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+
+
+.test{
+    background-color:aqua;
+}
+
+.particles-js {
+    position: fixed;
+    top: 12%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/lib/Images/FINAL.gif");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+    overflow-x: auto;
+}
+
+@media (max-width: 768px) {
+    .particles-js {
+        background-size: cover; /* Adjust background size for smaller screens */
+    }
+}
+
