@@ -45,7 +45,7 @@ namespace TOURISM_WEBSITE.Pages
 
 
 
-                    // InsertDataIntoDatabase();
+                    InsertDataIntoDatabase();
                     SendEmail();
 
 
@@ -105,28 +105,28 @@ namespace TOURISM_WEBSITE.Pages
                 throw new Exception("Error sending email.", ex);
             }
         }
-    
-        
 
 
 
-        //private void InsertDataIntoDatabase()
-        //{
-        //    String connectionString = "Data Source=.\\sqlexpress;Initial Catalog=Forms;Integrated Security=True;";
-        //    using (SqlConnection connection = new SqlConnection(connectionString))
-        //    {
-        //        connection.Open();
-        //        String sql = "INSERT INTO [dbo].[Request] (FullName, Email, Mes) VALUES (@fullname, @email, @message)";
 
-        //        using (SqlCommand command = new SqlCommand(sql, connection))
-        //        {
-        //            command.Parameters.AddWithValue("@fullname", clientInfo.fullname);
-        //            command.Parameters.AddWithValue("@email", clientInfo.email);
-        //            command.Parameters.AddWithValue("@message", clientInfo.message);
 
-        //            command.ExecuteNonQuery();
-        //        }
-        //    }
-        //}
+        private void InsertDataIntoDatabase()
+        {
+            String connectionString = "Data Source=.\\sqlexpress;Initial Catalog=Forms;Integrated Security=True;";
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+                String sql = "INSERT INTO [dbo].[Request] (FullName, Email, Mes) VALUES (@fullname, @email, @message)";
+
+                using (SqlCommand command = new SqlCommand(sql, connection))
+                {
+                    command.Parameters.AddWithValue("@fullname", clientInfo.fullname);
+                    command.Parameters.AddWithValue("@email", clientInfo.email);
+                    command.Parameters.AddWithValue("@message", clientInfo.message);
+
+                    command.ExecuteNonQuery();
+                }
+            }
+        }
     }
 }
