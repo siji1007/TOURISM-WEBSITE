@@ -113,7 +113,8 @@ h2 {
     bottom: 0;
     left: 0;
     right: 0;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/lib/Images/FINAL.gif");
+    background:transparent;
+    /*background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/lib/Images/FINAL.gif");*/
     background-size: cover;
     background-position: center;
     display: flex;

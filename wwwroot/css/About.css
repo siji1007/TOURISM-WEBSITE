@@ -1,9 +1,76 @@
-﻿
-.card {
-    margin-top: 10rem;
-    background-color: black;
+﻿html,
+body {
     height: 100%;
-    width: 100%;    
-    
-    
+    margin: 0;
+    padding: 0;
+}
+
+.About-main-content {
+    margin-top: 30px;
+    height: 100%; /* Set to 100vh for full height */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the left */
+    justify-content: center;
+    text-align: center;
+    background-size: cover;
+    width: 100%;
+    background: transparent;
+    overflow-y: auto;
+    overflow-x: auto;
+    position: fixed;
+}
+
+h1 {
+    margin-bottom: 30px; /* Adjust as needed for spacing between title and image */
+    font-weight: bold;
+    color: white;
+    margin-left: 600px;
+}
+
+section {
+    display: flex;
+    margin-bottom:100px;
+}
+
+.about-pic {
+    width: 100%;
+    height: 100%;
+    max-width: 500px;
+    border-radius: 15px; /* Adjust  border-radius value as needed */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    opacity:70%;
+
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 600px; /* Adjust as needed for spacing between image and text */
+    position: absolute;
+}
+
+h3 {
+    color: orange;
+    font-weight:bold;
+}
+
+p {
+    color: white;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .About-main-content {
+        align-items: center; /* Center content for smaller screens */
+    }
+
+    .text-content {
+        margin-left: 0; /* Remove left margin for smaller screens */
+    }
+
+    p {
+        font-size: 10px;
+    }
 }
