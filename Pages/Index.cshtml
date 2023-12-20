@@ -4,31 +4,227 @@
     ViewData["Title"] = "Home page";
 }
 
-<link rel="stylesheet" href="~/css/home.css" asp-append-version="true" />
-<link href='https://fonts.googleapis.com/css?family=Langar' rel='stylesheet'>
-<div class="home-content">
-    <img src="/lib/Images/Maculabo Island Paracale.png" alt="Background Image" class="background-image">
-    <img src="/lib/Images/Provl Capitol.jpg" alt="Background Image" class="background-image2">
-    <h5 class="slogan">
-        CAMARINES NORTE
-    </h5>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="~/css/home.css">
+</head>
+<body>
 
-    <section class="body">
-        
-        <div class="slider-wrapper">
-            <div class="textcontent">
-                <h5 class="slogan2">
-                    ALL ABOUT CAMARINES NORTE
-                </h5>
+    <div class="home-content">
+        <!-- carousel -->
+        <section class="carousel">
+            <!-- list item -->
+            <div class="list">
+                <div class="item">
+                    <img src="~/lib/Images/Mag Asawang Bato Salvacion Sta. Elena.jpg">
+                    <div class="content">
+                        <div class="title">CAMARINES NORTE</div>
+                        <div class="topic">ANIMAL</div>
+                        <div class="des">
+                            <!-- lorem 50 -->
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus unde. Ut, exercitationem eum aperiam illo illum laudantium?
+                        </div>
+                        <div class="buttons">
+                            <button>SEE MORE</button>
+                            <button>SUBSCRIBE</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="~/lib/Images/Mahabang Buhangin Calaguas Islands.jpg">
+                    <div class="content">
+                        <div class="author">LUNDEV</div>
+                        <div class="title">DESIGN SLIDER</div>
+                        <div class="topic">ANIMAL</div>
+                        <div class="des">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus unde. Ut, exercitationem eum aperiam illo illum laudantium?
+                        </div>
+                        <div class="buttons">
+                            <button>SEE MORE</button>
+                            <button>SUBSCRIBE</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="~/lib/Images/Hamoraon Peeble Beach.jpg">
+                    <div class="content">
+                        <div class="author">LUNDEV</div>
+                        <div class="title">DESIGN SLIDER</div>
+                        <div class="topic">ANIMAL</div>
+                        <div class="des">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus unde. Ut, exercitationem eum aperiam illo illum laudantium?
+                        </div>
+                        <div class="buttons">
+                            <button>SEE MORE</button>
+                            <button>SUBSCRIBE</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="~/lib/Images/Mother Tree Basud.jpg">
+                    <div class="content">
+                        <div class="author">LUNDEV</div>
+                        <div class="title">DESIGN SLIDER</div>
+                        <div class="topic">ANIMAL</div>
+                        <div class="des">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus unde. Ut, exercitationem eum aperiam illo illum laudantium?
+                        </div>
+                        <div class="buttons">
+                            <button>SEE MORE</button>
+                            <button>SUBSCRIBE</button>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="image1">
-                <img id="#" src="/lib/Images/monumsplash.png" />
+            <!-- list thumnail -->
+            <div class="thumbnail">
+                <div class="item">
+                    <img src="~/lib/Images/Maculabo Island Paracale.png">
+                    <div class="content">
+                        <div class="title">
+                            Name Slider
+                        </div>
+                        <div class="description">
+                            Description
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="~/lib/Images/Parola Island Jose Panganiban.jpg">
+                    <div class="content">
+                        <div class="title">
+                            Name Slider
+                        </div>
+                        <div class="description">
+                            Description
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="~/lib/Images/Hamoraon Peeble Beach.jpg">
+                    <div class="content">
+                        <div class="title">
+                            Name Slider
+                        </div>
+                        <div class="description">
+                            Description
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="i">
+                    <div class="content">
+                        <div class="title">
+                            Name Slider
+                        </div>
+                        <div class="description">
+                            Description
+                        </div>
+                    </div>
+                </div>
             </div>
+            <!-- next prev -->
 
-            <div class="image2">
-                <img id="#" src="/lib/Images/macusplash.png" />
+            <div class="arrows">
+                <button id="prev"><</button>
+                <button id="next">></button>
             </div>
+            <!-- time running -->
+            <div class="time"></div>
+        </section>
+        <section class="overview">
+            <div class="overview-contents">
+                <h1 class="overview-title">What's in Camarines Norte?</h1>
+                <p class="overview-context">
+                    Our clients' bottom line is our top priority.
+                    We are in constant communication with the people we serve and are
+                    committed to advancing the immediate needs and wants of our clients.
+                    Our team works around the clock to provide the necessary services and
+                    support that each client needs from us.
+                </p>
+                <button>EXPLORE NOW!</button>
+            </div>
+            <div class="overview-img">
+                <img src="~/lib/images/pics2.png" />
+            </div>
+        </section>
+        <section class="festivals">
+            <h1>Fun and Cool Festivals</h1><
+            <img src="~/lib/images/slidestat.png" />
+            <button>EXPLORE NOW!</button>
+        </section>
+        <section class="overview2">
+            <div class="overview-img2">
+                <img src="~/lib/images/overviewimg.png" />
+            </div>
+            <div class="overview-contents2">
+                <h1 class="overview-title2">What's in Camarines Norte?</h1>
+                <p class="overview-context2">
+                    Our clients' bottom line is our top priority.
+                    We are in constant communication with the people we serve and are
+                    committed to advancing the immediate needs and wants of our clients.
+                    Our team works around the clock to provide the necessary services and
+                    support that each client needs from us.
+                </p>
+                <button>EXPLORE NOW!</button>
+            </div>
+        </section>
+    </div>
 
-        </div>
-    </section>
-</div>
+
+    <script>
+        let nextDom = document.getElementById('next');
+        let prevDom = document.getElementById('prev');
+
+        let carouselDom = document.querySelector('.carousel');
+        let SliderDom = carouselDom.querySelector('.carousel .list');
+        let thumbnailBorderDom = document.querySelector('.carousel .thumbnail');
+        let thumbnailItemsDom = thumbnailBorderDom.querySelectorAll('.item');
+        let timeDom = document.querySelector('.carousel .time');
+
+        thumbnailBorderDom.appendChild(thumbnailItemsDom[0]);
+        let timeRunning = 3000;
+        let timeAutoNext = 7000;
+
+        nextDom.onclick = function () {
+            showSlider('next');
+        }
+
+        prevDom.onclick = function () {
+            showSlider('prev');
+        }
+        let runTimeOut;
+        let runNextAuto = setTimeout(() => {
+            next.click();
+        }, timeAutoNext)
+        function showSlider(type) {
+            let SliderItemsDom = SliderDom.querySelectorAll('.carousel .list .item');
+            let thumbnailItemsDom = document.querySelectorAll('.carousel .thumbnail .item');
+
+            if (type === 'next') {
+                SliderDom.appendChild(SliderItemsDom[0]);
+                thumbnailBorderDom.appendChild(thumbnailItemsDom[0]);
+                carouselDom.classList.add('next');
+            } else {
+                SliderDom.prepend(SliderItemsDom[SliderItemsDom.length - 1]);
+                thumbnailBorderDom.prepend(thumbnailItemsDom[thumbnailItemsDom.length - 1]);
+                carouselDom.classList.add('prev');
+            }
+            clearTimeout(runTimeOut);
+            runTimeOut = setTimeout(() => {
+                carouselDom.classList.remove('next');
+                carouselDom.classList.remove('prev');
+            }, timeRunning);
+
+            clearTimeout(runNextAuto);
+            runNextAuto = setTimeout(() => {
+                next.click();
+            }, timeAutoNext)
+        }
+    </script>
+</body>
+</html>

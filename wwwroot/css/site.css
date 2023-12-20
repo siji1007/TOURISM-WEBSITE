@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,700&family=Barabar&display=swap');
 
 
 :root{
@@ -32,12 +33,13 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    background: #333;
+    background-color: transparent;
     z-index: 1000;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem 9%;
+    padding: 0rem 10%;
+    margin-top: 2%;
 }
 
 
@@ -45,7 +47,7 @@ header {
         color: white;
         font-size: 2rem;
         text-decoration: none;
-     
+        font-style: 'Barabar', sans-serif;
         margin-right:50px;
     }
 
@@ -163,7 +165,7 @@ header .search-bar-container label:hover{
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: black; /* Adjust the color as needed */
+    color: black; 
 }
 
 
@@ -176,6 +178,7 @@ main {
     top: 0;
     left: 0;
     right: 0;
+<<<<<<< HEAD
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/lib/Images/FINAL.gif");
   
     background-size: cover;
@@ -191,3 +194,7 @@ main {
 
 
 
+=======
+    background-color: white;
+}
+>>>>>>> 0ebb62f4407b09625e333e582a1999b9509c0683
