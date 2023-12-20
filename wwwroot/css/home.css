@@ -1,5 +1,12 @@
 ﻿@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+@font-face {
+    font-family: 'barabara';
+    src: url('../lib/fonts/BARABARA-final.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     margin: 0;
     background-color: #000;
@@ -59,10 +66,12 @@ a {
             font-size: 5em;
             font-weight: bold;
             line-height: 1.3em;
+            font-family: barabara, sans-serif;
         }
 
         .carousel .list .item .topic {
-            color: #f1683a;
+            color: forestgreen;
+            font-family: barabara, sans-serif;
         }
 
         .carousel .list .item .buttons {
@@ -347,15 +356,16 @@ a {
 }
 
 .overview-title {
-    color: #000; 
-    font-size: 50px; 
+    color: #000;
+    font-size: 45px;
     font-weight: bold;
+    font-family: barabara, sans-serif;
 }
 
 .overview-contents {
     margin-top: 150px;
-    position:absolute;
-    width:400px;
+    position: absolute;
+    width: 400px;
     height: 550px;
     margin-left: 130px;
 }
@@ -369,16 +379,16 @@ a {
         color: white;
     }
 
-    .overview-context {
-        color: #000;
-        font-size: 20px;
-        font-weight: bold;
-    }
+.overview-context {
+    color: #000;
+    font-size: 15px;
+    font-weight: bold;
+}
 
-    .overview-img {
-        margin-left: 50%;
-        margin-top: 5%;
-    }
+.overview-img {
+    margin-left: 50%;
+    margin-top: 5%;
+}
 
 /*festivals css*/
 .festivals {
@@ -401,6 +411,7 @@ a {
         font-size: 50px;
         font-weight: bold;
         padding-top: 100px;
+        font-family: barabara, sans-serif;
     }
 
     .festivals img {
@@ -409,18 +420,19 @@ a {
         margin-left: 220px;
     }
 
-.festivals button {
-    margin-top: -240px;
-    height: 60px;
-    width: 150px;
-    background-color: #fff;
-    border-radius: 5px;
-    font-size: 13px;
-    color: black;
-    margin-bottom: 20px;
-    margin-left: 620px;
-}
+    .festivals button {
+        margin-top: -240px;
+        height: 60px;
+        width: 150px;
+        background-color: #fff;
+        border-radius: 5px;
+        font-size: 13px;
+        color: black;
+        margin-bottom: 20px;
+        margin-left: 620px;
+    }
 
+/*overview 2 css*/
 .overview2 {
     background-image: url('../lib/images/2nd_bg.png');
     background-size: cover;
@@ -449,13 +461,14 @@ a {
 
 .overview-title2 {
     color: #000;
-    font-size: 50px;
+    font-size: 45px;
     font-weight: bold;
+    font-family: barabara, sans-serif;
 }
 
 .overview-context2 {
     color: #000;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: bold;
 }
 
@@ -467,6 +480,48 @@ a {
     font-size: 13px;
     color: white;
 }
+
+/*feedbacks css*/
+.feedbacks {
+    background-image: url('../lib/images/2nd_bg.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin-top: 0;
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+    .feedbacks h1 {
+        position: absolute;
+        margin-left: 40%;
+        color: #131E3D;
+        font-size: 50px;
+        font-weight: bold;
+        padding-top: 100px;
+        font-family: barabara, sans-serif;
+    }
+
+    .feedbacks h3 {
+        position: absolute;
+        margin-top: 5%;
+        margin-left: 35%;
+        color: #131E3D;
+        font-size: 25px;
+        font-weight: bold;
+        padding-top: 100px;
+    }
+
+.feedback {
+    width: 300vw;
+    width: 300vh;
+    color: black;
+    margin-left: 3%;
+}
+
 @font-face {
     font-family: 'barabara';
     src: url('../lib/fonts/BARABARA-final.otf') format('opentype');
