@@ -4,14 +4,191 @@
     ViewData["Title"] = "Destinations";
 
 }
-<h1>DESTINATIONS</h1>
-<div class="destinations-content">
-    <figure>
-        <img src="https://picsum.photos/id/287/250/300" alt="Mountains">
-        <figcaption>The Day</figcaption>
-    </figure>
-    <figure style="--c:#fff5">
-        <img src="https://picsum.photos/id/475/250/300" alt="Mountains">
-        <figcaption>The Night</figcaption>
-    </figure>
-</div>
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+<link rel="stylesheet" href="~/css/Destinations.css" />
+<link rel="stylesheet" href="~/css/tour-responsive.css" />
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<style>
+    body {
+        background-image: url('lib/images/paragliding.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+        margin: 0;
+        height: 100vh;
+        overflow-y: auto;
+    }
+
+    .container-wrapper {
+        /* Add a container around the content */
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh; /* Minimum height of the viewport */
+        margin-left: 30px;
+    }
+
+    .scroll-container {
+        padding: 20px;
+        background-color: #f8f9fa;
+    }
+
+    .center-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .top-attractions {
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+
+
+    .additional-section {
+        padding: 20px;
+        background-color: #f8f9fa;
+    }
+
+</style>
+<!-- Tours -->
+<div class="container-wrapper">
+    <section class="events d-flex justify-content-center align-items-center m-4" id="events">
+        <div class="container mx-auto scroll-container">
+            <div class="title text-center">
+                <h1 class="dark">Tours</h1>
+                <div class="line"></div>
+            </div>
+
+            <div class="row">
+                <!-- tours.cshtml -->
+
+                <article class="card col-md-4 mb-4 mx-2 equal-height-col">
+                    <img class="card-img" src="lib/images/paragliding.jpg" alt="Outdoor Adventure">
+                    <h4 class="dark">Outdoor Adventure</h4>
+                    <p class="font-color">
+                        Escape to Camarines Norte, where
+                        pristine nature and adrenaline-pumping
+                        activities await you.
+                    </p>
+                    <a href="outdoor" class="ctn" data-target="outdoor details">All Details</a>
+                </article>
+
+                <article class="card col-md-4 mb-4 mx-2 equal-height-col">
+                    <img class="card-img" src="lib/images/islandhoping.JPG" alt="Island Hopping">
+                    <h4 class="dark">Island Hopping</h4>
+                    <p class="font-color">
+                        Discover the hidden gems scattered
+                        across crystal-clear waters, and let
+                        the natural wonders of this enchanting
+                        province captivate your soul.
+                    </p>
+                    <a href="IslandHoppingDetailsPage" class="ctn" data-target="island-hopping-details">All Details</a>
+                </article>
+
+                <article class="card col-md-4 mb-4 mx-2 equal-height-col">
+                    <img class="card-img" src="lib/images/malatap.jpg" alt="Picturesque Waterfalls">
+                    <h4 class="dark">Picturesque Waterfalls</h4>
+                    <p class="font-color">
+                        Embark on an unforgettable adventure to Camarines Norte,
+                        the "Land of Waterfalls," and discover hidden gems
+                        cascading amidst lush greenery.
+                    </p>
+                    <a href="waterfalls" class="ctn" data-target="Waterfall Details">All Details</a>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript for handling transitions -->
+    <script>
+        $(document).ready(function () {
+            // Add click event listener to each "All Details" button
+            $(".ctn").on("click", function () {
+                // Get the target details page ID from the data-target attribute
+                var targetDetailsPage = $(this).attr("href");  // Use 'href' instead of 'data-target'
+
+                // Slide up the current page
+                $("body").slideUp(400, function () {
+                    // Redirect to the details page after the slide-up animation is complete
+                    window.location.href = targetDetailsPage;
+                });
+
+                // Prevent the default behavior of the anchor tag
+                return false;
+            });
+        });
+    </script>
+
+
+
+
+
+
+    <section>
+        <div class="top-attractions">
+            <div class="top-attractions-back">
+                <div class="top-attractions-content">
+                    <div class="attractions-topic">
+                        <h1>Top Attractions</h1>
+                    </div>
+                    <div class="vertical-divider1"></div>
+                    <div class="sinharaja">
+                        <div class="sinharaja-content">
+                            <div class="sinharaja-para">
+                                <p>
+                                    <h3>PAROLA ISLANDS</h3>
+                                </p>
+                                <p>
+                                    The Parola Island is also known as “Tailon Island”,
+                                    maybe because it is shaped like an eagle's talon from
+                                    up above, hence the name Tailon. To the fisherfolks of
+                                    Jose Panganiban, they call it “Tunao”. It is also known
+                                    to many as the “Parola Island” because of the old lighthouse
+                                    standing on the head of the island
+                                </p>
+                                <p>
+                                    <a href="">Read more<i class="fas fa-angle-double-right"></i></a>
+                                </p>
+                            </div>
+                            <div class="sinharaja-image">
+                                <img src="lib/images/parola.jpeg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sri-padaya">
+                        <div class="sri-padaya-content">
+                            <div class="sri-padaya-image">
+                                <img src="lib/images/calaguas.jpg">
+                            </div>
+                            <div class="sri-padaya-para">
+                                <p>
+                                    <h3>CALAGUAS ISLANDS</h3>
+                                </p>
+                                <p>
+                                    The Calaguas Islands are located in the Municipality of Vinzons,
+                                    in the Province of Camarines Norte. It is known for its pristine
+                                    beaches—the most popular among these is the Mahabang Buhangin beach,
+                                    which is made up of a long stretch of powdery white sand.
+                                </p>
+                                <p>
+                                    <a href="">Read more<i class="fas fa-angle-double-right"></i></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vertical-divider2"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
