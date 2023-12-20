@@ -2,13 +2,14 @@
 
 html, body {
     margin: 0;
-    overflow-y: auto; /* Enable vertical scrolling */
+    overflow:hidden;
 }
 
 body {
     background-image: url('lib/images/paragliding.jpg');
     background-size: cover;
     background-attachment: fixed;
+    width:50%;
 }
 
 .container-wrapper {
@@ -46,8 +47,7 @@ body {
 
 .card-img {
     object-fit: cover;
-    height: 180px; /* Adjust the height as needed */
-    /* Ensure the image takes 100% width of its container */
+    height: 180px; 
 }
 
 
@@ -56,32 +56,30 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: white;
+    background-color: transparent;
 }
-
-
-
-
-
 
 
 
 
 .card {
     cursor: pointer;
-    width: 25%; /* Adjust the width as needed */
+    width: 20%; /* Adjust the width as needed */
+    margin: 5px; /* Adjust the margin to control the space around each card */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
+    background-color: aqua;
 }
+
 
 
 /* Events */
 section {
     width: 80%;
-    margin: 80px auto;
+    margin: 0px auto;
 }
 
 .title {
@@ -105,8 +103,11 @@ section {
 
 .card {
     cursor: pointer;
-    height: 400px
+    height: 400px;
+    
 }
+
+
 
 .row .col {
     display: flex;
@@ -114,6 +115,7 @@ section {
     align-items: center;
     margin: 10px;
     height: 450px;
+    
 }
 
     .row .col img {
@@ -122,6 +124,7 @@ section {
 
 .events .row {
     margin-top: 50px;
+    
 }
 
 .col > h4 {
@@ -160,6 +163,9 @@ section {
     color: whitesmoke;
     margin-top: 15px;
 }
+
+
+
 
 
 
