@@ -537,8 +537,24 @@ a {
     font-weight: normal;
     font-style: normal;
 }
+@media only screen and (max-width: 767px) {
+    .content .title {
+        /* Adjust font size for small screens */
+        font-size: 9px;
+    }
 
+    .content .topic {
+        /* Adjust font size for small screens */
+        font-size:  2px;
 
+    }
+
+    .content .des {
+        /* Adjust font size for small screens */
+        font-size: 9px;
+
+    }
+}
 
 
 
