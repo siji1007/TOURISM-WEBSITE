@@ -21,6 +21,15 @@ a {
 }
 
 
+.item .title_1,
+.item .description_1 {
+    color: black;
+}
+
+
+
+
+
 /* carousel */
 .carousel {
     height: 100vh;
@@ -528,3 +537,9 @@ a {
     font-weight: normal;
     font-style: normal;
 }
+
+
+
+
+
+

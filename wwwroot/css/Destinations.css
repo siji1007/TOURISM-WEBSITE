@@ -662,7 +662,7 @@ input[type=radio] {
 
 html, body {
     margin: 0;
-    overflow-y: auto; /* Enable vertical scrolling */
+    overflow: hidden; /*Disable scrolling */
 }
 
 body {
